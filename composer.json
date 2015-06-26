@@ -1,0 +1,19 @@
+{
+  "name": "matiux/type-utilities",
+  "description": "A collection of classes to perform some operation starting from primitive types",
+  "authors": [
+    {
+      "name": "matiux",
+      "email": "m.galacci@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Matiux\\TypeUtilities": "src/"
+    }
+  }
+}
