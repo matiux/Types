@@ -2,6 +2,8 @@
   "name": "matiux/types",
   "description": "A collection of classes to perform some operation starting from primitive types",
   "keywords":     ["Primitive", "Type", "String", "Object", "Abstraction"],
+  "license": "MIT",
+  "type": "library",
   "authors": [
     {
       "name": "matiux",
