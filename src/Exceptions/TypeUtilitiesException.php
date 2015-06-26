@@ -1,4 +1,4 @@
-<?php namespace Matiux\TypeUtilities\Exceptions;
+<?php namespace Matiux\Types\Exceptions;
 
 class TypeUtilitiesException extends \Exception
 {

@@ -13,7 +13,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Matiux\\TypeUtilities": "src/"
+      "Matiux\\Types\\": "src/"
     }
   }
 }

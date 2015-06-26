@@ -1,4 +1,4 @@
-<?php namespace Matiux\TypeUtilities\Types;
+<?php namespace Matiux\Types;
 
 class Object
 {
