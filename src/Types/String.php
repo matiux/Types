@@ -1,6 +1,6 @@
 <?php namespace Matiux\Types;
 
-use Matiux\Types\Exceptions\TypeUtilitiesException;
+use Matiux\Exceptions\TypeUtilitiesException;
 
 class String
 {
