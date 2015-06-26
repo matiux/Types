@@ -1,7 +1,7 @@
 {
   "name": "matiux/types",
   "description": "A collection of classes to perform some operation starting from primitive types",
-  "keywords":     ["BDD", "ScenarioBDD", "StoryBDD", "testing", "Behat"],
+  "keywords":     ["Primitive", "Type", "String", "Object", "Abstraction"],
   "authors": [
     {
       "name": "matiux",
