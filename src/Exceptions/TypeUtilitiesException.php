@@ -1,6 +1,6 @@
 <?php namespace Matiux\Exceptions;
 
-class TypeUtilitiesException extends \Exception
+class TypesException extends \Exception
 {
     public function __construct($message, $code = 0, Exception $previous = null)
     {

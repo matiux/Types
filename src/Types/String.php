@@ -1,6 +1,6 @@
 <?php namespace Matiux\Types;
 
-use Matiux\Exceptions\TypeUtilitiesException;
+use Matiux\Exceptions\TypesException;
 
 class String
 {
@@ -57,16 +57,16 @@ class String
         switch($type)
         {
             case 'array':
-                throw new TypeUtilitiesException('String non accetta "array"');
+                throw new TypesException('String non accetta "array"');
                 break;
             case 'resource':
-                throw new TypeUtilitiesException('String non accetta "resource"');
+                throw new TypesException('String non accetta "resource"');
                 break;
             case 'NULL':
-                throw new TypeUtilitiesException('String non accetta "NULL"');
+                throw new TypesException('String non accetta "NULL"');
                 break;
             case 'object':
-                throw new TypeUtilitiesException('String non accetta "object"');
+                throw new TypesException('String non accetta "object"');
                 break;
             case 'unknown type':
                 throw new \Exception('String non accetta "unknown type"');
@@ -220,7 +220,7 @@ class String
      * @param array $arr
      * @param bool $force
      * @return array
-     * @throws TypeUtilitiesException
+     * @throws TypesException
      */
     public function pathToArray(array $arr, $force = false)
     {
@@ -241,7 +241,7 @@ class String
 
                 } else {
 
-                    throw new TypeUtilitiesException("Path {$this} doesn't exist");
+                    throw new TypesException("Path {$this} doesn't exist");
                 }
             }
 
