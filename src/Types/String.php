@@ -289,6 +289,6 @@ class String
         if (!$return)
             $this->_str = S::create($this->_str)->slugify($replacement);
         else
-            return S::create($this->_str)->slugify($replacement);
+            return (string) S::create($this->_str)->slugify($replacement);
     }
 }
