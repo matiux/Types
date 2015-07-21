@@ -149,10 +149,12 @@ class String
 
     private function strLength()
     {
-        $len = 0;
+        //        $len = 0;
+        //
+        //        while (@$this->_str[$len] != '')
+        //            $len++;
 
-        while (@$this->_str[$len] != '')
-            $len++;
+        $len = strlen($this->_str);
 
         return $len;
     }
