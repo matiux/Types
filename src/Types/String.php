@@ -1,6 +1,7 @@
 <?php namespace Matiux\Types;
 
 use Matiux\Exceptions\TypesException;
+use Stringy\Stringy as S;
 
 class String
 {
@@ -8,6 +9,8 @@ class String
     private $_strLength;
     private $_lowerAlphabet = [];
     private $_upperAlphabet = [];
+
+    private $_encoding      = 'UTF-8';
 
     public function __construct($string = '')
     {
@@ -277,5 +280,13 @@ class String
         $arr = $value;
 
         return $startPointer;
+    }
+
+    public function slugify($replacement = '-', $return = false)
+    {
+        if (!$return)
+            $this->_str = S::create($this->_str)->slugify($replacement);
+        else
+            return S::create($this->_str)->slugify($replacement);
     }
 }
