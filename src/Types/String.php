@@ -284,7 +284,7 @@ class String
         return $startPointer;
     }
 
-    public function slugify($replacement = '-', $return = false)
+    public function slugify($replacement = '-', $return = true)
     {
         if (!$return)
             $this->_str = S::create($this->_str)->slugify($replacement);
