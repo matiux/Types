@@ -3,7 +3,7 @@
 use Matiux\Exceptions\TypesException;
 use Stringy\Stringy as S;
 
-class String
+class Str
 {
     private $_str;
     private $_strLength;
@@ -60,19 +60,19 @@ class String
         switch($type)
         {
             case 'array':
-                throw new TypesException('String non accetta "array"');
+                throw new TypesException('Str "array"');
                 break;
             case 'resource':
-                throw new TypesException('String non accetta "resource"');
+                throw new TypesException('Str "resource"');
                 break;
             case 'NULL':
-                throw new TypesException('String non accetta "NULL"');
+                throw new TypesException('Str "NULL"');
                 break;
             case 'object':
-                throw new TypesException('String non accetta "object"');
+                throw new TypesException('Str "object"');
                 break;
             case 'unknown type':
-                throw new \Exception('String non accetta "unknown type"');
+                throw new \Exception('Str "unknown type"');
                 break;
             case 'boolean':
                 return  $string ? 'true' : 'false';
