@@ -10,7 +10,6 @@
       "email": "m.galacci@gmail.com"
     }
   ],
-  "minimum-stability": "stable",
   "require": {
     "php": ">=5.4.0",
     "danielstjules/stringy": "~1.9"
